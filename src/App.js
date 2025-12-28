@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -28,7 +28,7 @@ export default function App() {
       >
         <Header />
 
-        <Container sx={{ flex: 1, py: 1 }}>
+        <main style={{ flex: 1, width: '100%' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -36,9 +36,8 @@ export default function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<ContactUs />} />
-
           </Routes>
-        </Container>
+        </main>
 
         <Footer />
       </Box>
