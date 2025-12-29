@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/viziunetech/static/css/main.27970de0.css",
-    "main.js": "/viziunetech/static/js/main.a7c1a114.js",
+    "main.css": "/viziunetech/static/css/main.ecd9376b.css",
+    "main.js": "/viziunetech/static/js/main.bfec8786.js",
     "static/js/453.bcf19a24.chunk.js": "/viziunetech/static/js/453.bcf19a24.chunk.js",
     "index.html": "/viziunetech/index.html",
-    "main.27970de0.css.map": "/viziunetech/static/css/main.27970de0.css.map",
-    "main.a7c1a114.js.map": "/viziunetech/static/js/main.a7c1a114.js.map",
+    "main.ecd9376b.css.map": "/viziunetech/static/css/main.ecd9376b.css.map",
+    "main.bfec8786.js.map": "/viziunetech/static/js/main.bfec8786.js.map",
     "453.bcf19a24.chunk.js.map": "/viziunetech/static/js/453.bcf19a24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27970de0.css",
-    "static/js/main.a7c1a114.js"
+    "static/css/main.ecd9376b.css",
+    "static/js/main.bfec8786.js"
   ]
 }
