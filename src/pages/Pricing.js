@@ -63,8 +63,8 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Pricing Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+        {/* Pricing Grid: Web Development */}
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-12">
           {plans.map((plan, index) => (
             <div
               key={index}
@@ -78,7 +78,6 @@ export default function Pricing() {
 
               <h3 className="text-lg md:text-xl font-bold text-cyan-300 mb-1 group-hover:text-fuchsia-400 transition-colors duration-300">{plan.name}</h3>
               <p className="text-gray-200 text-xs mb-2">{plan.description}</p>
-
 
               <div className="text-2xl font-extrabold text-cyan-200 mb-1 group-hover:text-fuchsia-300 transition-colors duration-300">{plan.price}</div>
               <div className="text-xs font-semibold text-fuchsia-300 mb-2 group-hover:text-cyan-300 transition-colors duration-300">
@@ -104,6 +103,72 @@ export default function Pricing() {
               </button>
             </div>
           ))}
+        </div>
+
+        {/* Pricing Grid: Other Services */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-400 to-fuchsia-500 bg-clip-text text-transparent mb-2 tracking-wide drop-shadow-lg">
+              Other Services Pricing
+            </h3>
+            <p className="text-gray-200 max-w-2xl mx-auto text-base md:text-lg">
+              Sample packages for QA Automation, Automation Frameworks, CI/CD, and Database/API solutions. For custom requirements, contact us for a quote.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {/* QA Automation */}
+            <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-6 flex flex-col items-center text-center group">
+              <div className="text-4xl mb-2">🧪</div>
+              <h4 className="text-lg font-bold text-cyan-300 mb-1">QA Automation</h4>
+              <div className="text-2xl font-extrabold text-cyan-200 mb-1">Starting at ₹14,999</div>
+              <ul className="space-y-1 mb-3 text-xs text-cyan-100">
+                <li>API, Database, Web UI Automation</li>
+                <li>Framework Setup & Scripting</li>
+                <li>Test Strategy & Reporting</li>
+                <li>Up to 50 Test Cases</li>
+              </ul>
+              <a href="/contact" className="w-full py-2 rounded-full text-sm font-bold shadow-md bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-[#181c2f] hover:from-fuchsia-500 hover:to-cyan-400 transition-all mt-2">Request Quote</a>
+            </div>
+            {/* Automation Frameworks */}
+            <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-6 flex flex-col items-center text-center group">
+              <div className="text-4xl mb-2">⚙️</div>
+              <h4 className="text-lg font-bold text-cyan-300 mb-1">Automation Frameworks</h4>
+              <div className="text-2xl font-extrabold text-cyan-200 mb-1">Starting at ₹19,999</div>
+              <ul className="space-y-1 mb-3 text-xs text-cyan-100">
+                <li>Custom Framework Design</li>
+                <li>Integration with CI/CD</li>
+                <li>Documentation & Training</li>
+                <li>Support & Maintenance</li>
+              </ul>
+              <a href="/contact" className="w-full py-2 rounded-full text-sm font-bold shadow-md bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-[#181c2f] hover:from-fuchsia-500 hover:to-cyan-400 transition-all mt-2">Request Quote</a>
+            </div>
+            {/* CI/CD & DevOps */}
+            <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-6 flex flex-col items-center text-center group">
+              <div className="text-4xl mb-2">🔄</div>
+              <h4 className="text-lg font-bold text-cyan-300 mb-1">CI/CD & DevOps</h4>
+              <div className="text-2xl font-extrabold text-cyan-200 mb-1">Starting at ₹9,999</div>
+              <ul className="space-y-1 mb-3 text-xs text-cyan-100">
+                <li>Jenkins, GitLab CI/CD Setup</li>
+                <li>Automated Deployments</li>
+                <li>Pipeline Optimization</li>
+                <li>Monitoring & Alerts</li>
+              </ul>
+              <a href="/contact" className="w-full py-2 rounded-full text-sm font-bold shadow-md bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-[#181c2f] hover:from-fuchsia-500 hover:to-cyan-400 transition-all mt-2">Request Quote</a>
+            </div>
+            {/* Database & API Solutions */}
+            <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-6 flex flex-col items-center text-center group">
+              <div className="text-4xl mb-2">🗄️</div>
+              <h4 className="text-lg font-bold text-cyan-300 mb-1">Database & API Solutions</h4>
+              <div className="text-2xl font-extrabold text-cyan-200 mb-1">Contact for Quote</div>
+              <ul className="space-y-1 mb-3 text-xs text-cyan-100">
+                <li>Database Design & Optimization</li>
+                <li>API Development & Testing</li>
+                <li>Data Migration & Integration</li>
+                <li>Performance Tuning</li>
+              </ul>
+              <a href="/contact" className="w-full py-2 rounded-full text-sm font-bold shadow-md bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-[#181c2f] hover:from-fuchsia-500 hover:to-cyan-400 transition-all mt-2">Request Quote</a>
+            </div>
+          </div>
         </div>
 
         {/* Workflow Section */}

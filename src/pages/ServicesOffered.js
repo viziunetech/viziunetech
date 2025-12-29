@@ -1,39 +1,39 @@
 const services = [
   {
-    title: "Website Development",
+    title: "QA Automation & Testing",
     description:
-      "High-performance, responsive websites built with modern technologies for speed, security, and scalability.",
-    icon: "🌐",
+      "End-to-end automation for API, Database, and Web UI using Python, Java, Selenium, UFT/QTP, and more. Robust frameworks and test strategies for quality delivery.",
+    icon: "🧪",
   },
   {
-    title: "E-commerce Solutions",
+    title: "Full Stack Development",
     description:
-      "Custom e-commerce stores with secure payments, product management, and conversion-focused UX.",
-    icon: "🛒",
+      "Modern web applications with ReactJS, Express.js, and scalable backend solutions. Expertise in both frontend and backend integration.",
+    icon: "💻",
   },
   {
-    title: "UI / UX Design",
+    title: "Automation Frameworks",
     description:
-      "User-centric designs that improve engagement, usability, and brand trust across all devices.",
-    icon: "🎨",
-  },
-  {
-    title: "Web App Development",
-    description:
-      "Powerful web applications using React, APIs, and scalable architectures tailored to your business.",
+      "Custom automation frameworks for testing and workflow optimization. Experience with Selenium, Postman, Python Requests, RestAssured, and Excel Macros.",
     icon: "⚙️",
   },
   {
-    title: "SEO & Performance",
+    title: "Agile Consulting & Delivery",
     description:
-      "Optimized websites with fast load times, clean code, and SEO best practices to rank better.",
+      "Agile-focused project management, sprint planning, and quality assurance for rapid, reliable software delivery.",
     icon: "🚀",
   },
   {
-    title: "Maintenance & Support",
+    title: "CI/CD & DevOps Integration",
     description:
-      "Ongoing updates, security patches, and technical support to keep your website running smoothly.",
-    icon: "🔧",
+      "Setup and optimization of Jenkins, GitLab CI/CD pipelines, and automated deployments for faster, safer releases.",
+    icon: "🔄",
+  },
+  {
+    title: "Database & API Solutions",
+    description:
+      "Database design, API development, and testing with MS SQL, Postgres, MongoDB, and RESTful services.",
+    icon: "🗄️",
   },
 ]
 

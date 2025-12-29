@@ -2,63 +2,53 @@
 import React from 'react';
 
 const services = [
+  {
+    icon: <span role="img" aria-label="QA Automation" className="text-cyan-400 text-3xl">🧪</span>,
+    title: "QA Automation & Testing",
+    desc: "End-to-end automation for API, Database, and Web UI. Robust frameworks and test strategies for quality delivery."
+  },
+  {
+    icon: <span role="img" aria-label="Full Stack" className="text-fuchsia-400 text-3xl">💻</span>,
+    title: "Full Stack Development",
+    desc: "Modern web applications with ReactJS, Express.js, and scalable backend solutions."
+  },
+  {
+    icon: <span role="img" aria-label="Frameworks" className="text-blue-400 text-3xl">⚙️</span>,
+    title: "Automation Frameworks",
+    desc: "Custom automation frameworks for testing and workflow optimization. Selenium, Postman, Python, and more."
+  },
+  {
+    icon: <span role="img" aria-label="Agile" className="text-yellow-400 text-3xl">🚀</span>,
+    title: "Agile Consulting & Delivery",
+    desc: "Agile-focused project management, sprint planning, and quality assurance for rapid, reliable software delivery."
+  },
+  {
+    icon: <span role="img" aria-label="CI/CD" className="text-green-400 text-3xl">🔄</span>,
+    title: "CI/CD & DevOps Integration",
+    desc: "Setup and optimization of Jenkins, GitLab CI/CD pipelines, and automated deployments."
+  },
+  {
+    icon: <span role="img" aria-label="Database" className="text-pink-400 text-3xl">🗄️</span>,
+    title: "Database & API Solutions",
+    desc: "Database design, API development, and testing with MS SQL, Postgres, MongoDB, and RESTful services."
+  },
+];
+// Testimonials data
+const testimonials = [
     {
-        icon: (
-            <svg className="w-10 h-10 text-cyan-400" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 15a4 4 0 004 4h10a4 4 0 004-4m-7-4V5a2 2 0 10-4 0v6m4 0a2 2 0 11-4 0" />
-            </svg>
-        ),
-        title: 'Cloud Solutions',
-        desc: 'Seamless migration, scalable infrastructure, and 24/7 cloud management.'
+        name: "Rohit S.",
+        role: "Product Manager, FinTech",
+        feedback: "The automation frameworks delivered by this team have saved us countless hours and improved our release quality. Highly recommended!"
     },
     {
-        icon: (
-            <svg className="w-10 h-10 text-pink-400" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 11c0-1.657 2.686-3 6-3s6 1.343 6 3-2.686 3-6 3-6-1.343-6-3z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 11v2c0 1.657 2.686 3 6 3s6-1.343 6-3v-2" />
-            </svg>
-        ),
-        title: 'Cybersecurity',
-        desc: 'Advanced protection, threat monitoring, and compliance for your business.'
+        name: "Priya M.",
+        role: "QA Lead, Healthcare",
+        feedback: "Professional, reliable, and always ahead of deadlines. Their CI/CD and QA solutions are top-notch."
     },
     {
-        icon: (
-            <svg className="w-10 h-10 text-green-400" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 17v-2a4 4 0 014-4h8a4 4 0 014 4v2" />
-                <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="1.5" />
-            </svg>
-        ),
-        title: 'Custom Software',
-        desc: 'Tailored web, mobile, and enterprise software development.'
-    },
-    {
-        icon: (
-            <svg className="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <rect x="2" y="7" width="20" height="10" rx="2" stroke="currentColor" strokeWidth="1.5" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8 21h8" />
-            </svg>
-        ),
-        title: 'IT Consulting',
-        desc: 'Expert advice, digital transformation, and IT strategy.'
-    },
-    {
-        icon: (
-            <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M6.05 17.95l-1.414 1.414m12.728 0l-1.414-1.414M6.05 6.05L4.636 7.464" />
-            </svg>
-        ),
-        title: 'Startup Acceleration',
-        desc: 'MVPs, rapid prototyping, and go-to-market support.'
-    },
-    {
-        icon: (
-            <svg className="w-10 h-10 text-fuchsia-400" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2" />
-                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" />
-            </svg>
-        ),
-        title: 'AI & Automation',
-        desc: 'Intelligent automation, AI integration, and data analytics.'
+        name: "Alex T.",
+        role: "CTO, E-Commerce Startup",
+        feedback: "Our web platform was transformed with modern tech and robust automation. Great communication and results!"
     },
 ];
 
@@ -137,7 +127,21 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Call to Action Section */}
+                        {/* Testimonials Section */}
+                        <div className="w-full mt-14 px-0 animate-fade-in delay-500">
+                                <h2 className="w-full text-2xl md:text-3xl font-bold text-fuchsia-400 text-center mb-6 tracking-wider">What Clients Say</h2>
+                                <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 px-0">
+                                    {testimonials.map((t, idx) => (
+                                        <div key={t.name} className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-6 flex flex-col items-center text-center">
+                                            <div className="text-xl font-bold text-cyan-300 mb-1">{t.name}</div>
+                                            <div className="text-xs text-cyan-100 mb-2">{t.role}</div>
+                                            <div className="text-gray-100 text-sm italic">“{t.feedback}”</div>
+                                        </div>
+                                    ))}
+                                </div>
+                        </div>
+
+                        {/* Call to Action Section */}
             <div className="w-full mt-10 text-center px-0 animate-fade-in delay-700">
                 <div className="w-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 rounded-2xl p-6 shadow-lg text-[#181c2f] flex flex-col items-center justify-center">
                     <h2 className="w-full text-2xl md:text-3xl font-bold mb-2">Ready to Transform Your Business?</h2>

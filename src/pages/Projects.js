@@ -3,22 +3,55 @@ const projects = [
     title: "TennisIndiaLive.com",
     description:
       "A live tennis scores and updates platform with real-time match data and optimized performance.",
-    tech: ["React", "API", "Live Data"],
     type: "web",
   },
   {
     title: "CodingAcademyIndia.com",
     description:
       "An educational platform offering structured coding courses with a modern UI and scalable architecture.",
-    tech: ["React", "Tailwind", "LMS"],
     type: "education",
   },
   {
     title: "Twitter Notification System",
     description:
       "An automated system that monitors Twitter activity and sends real-time notifications based on triggers.",
-    tech: ["Node.js", "Twitter API", "Automation"],
     type: "system",
+  },
+  {
+    title: "Enterprise Automation Dashboard",
+    description:
+      "A centralized dashboard for monitoring, scheduling, and reporting automation test runs across multiple environments.",
+    type: "web",
+  },
+  {
+    title: "Banking API Test Suite",
+    description:
+      "A robust API automation suite for a major bank, covering functional, regression, and performance testing with detailed analytics.",
+    type: "system",
+  },
+  {
+    title: "E-Commerce Performance Optimizer",
+    description:
+      "A toolkit to analyze, optimize, and automate performance testing for large-scale e-commerce platforms.",
+    type: "web",
+  },
+  {
+    title: "Healthcare Data Migration Tool",
+    description:
+      "A secure solution for migrating and validating sensitive healthcare data between legacy and modern systems.",
+    type: "system",
+  },
+  {
+    title: "Custom CI/CD Pipeline Builder",
+    description:
+      "A configurable tool to set up, visualize, and manage CI/CD pipelines for rapid, reliable deployments.",
+    type: "web",
+  },
+  {
+    title: "Smart Home Automation Portal",
+    description:
+      "A web portal to control, monitor, and automate smart home devices with real-time analytics and alerts.",
+    type: "web",
   },
 ]
 
@@ -79,16 +112,7 @@ export default function Projects() {
               <p className="text-sm text-gray-200 mb-3 leading-relaxed">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {project.tech.map((item, i) => (
-                  <span
-                    key={i}
-                    className="text-xs bg-cyan-400/10 text-cyan-200 px-3 py-1 rounded-full border border-cyan-400/30 group-hover:bg-fuchsia-400/20 group-hover:text-fuchsia-200 transition-colors duration-300"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+              {/* Tech stack removed for client-facing simplicity */}
             </div>
           ))}
         </div>

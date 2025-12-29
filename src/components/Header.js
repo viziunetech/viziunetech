@@ -1,13 +1,20 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="fixed top-0 w-full z-50 bg-[#181c2f]/90 backdrop-blur-md shadow-md border-b border-white/10">
       <div className="w-full flex items-center justify-between px-4 md:px-10 py-3">
         {/* Logo */}
-        <div className="flex items-center gap-2 select-none">
+        <button
+          className="flex items-center gap-2 select-none focus:outline-none"
+          style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+          onClick={() => navigate("/")}
+          aria-label="Go to home"
+        >
           {/* SVG Logo */}
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-400 via-fuchsia-500 to-blue-500 shadow-md">
             <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +31,7 @@ export default function Header() {
             </svg>
           </span>
           <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-blue-400 to-fuchsia-500 bg-clip-text text-transparent">ViziuneTech</span>
-        </div>
+        </button>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-7 text-base font-medium text-gray-200">
