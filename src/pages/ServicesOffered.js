@@ -1,32 +1,26 @@
 const services = [
   {
-    title: "QA Automation & Testing",
+    title: "QA Automation & Frameworks",
     description:
-      "End-to-end automation for API, Database, and Web UI using Python, Java, Selenium, UFT/QTP, and more. Robust frameworks and test strategies for quality delivery.",
+      "End-to-end automation for API, Database, and Web UI, including custom frameworks and robust test strategies.",
     icon: "🧪",
   },
   {
-    title: "Full Stack Development",
+    title: "Frontend Development",
     description:
-      "Modern web applications with ReactJS, Express.js, and scalable backend solutions. Expertise in both frontend and backend integration.",
-    icon: "💻",
+      "Beautiful, responsive websites and web apps using ReactJS and modern UI/UX best practices.",
+    icon: "🎨",
   },
   {
-    title: "Automation Frameworks",
+    title: "Backend Development",
     description:
-      "Custom automation frameworks for testing and workflow optimization. Experience with Selenium, Postman, Python Requests, RestAssured, and Excel Macros.",
-    icon: "⚙️",
-  },
-  {
-    title: "Agile Consulting & Delivery",
-    description:
-      "Agile-focused project management, sprint planning, and quality assurance for rapid, reliable software delivery.",
-    icon: "🚀",
+      "Robust, scalable server-side solutions with Node.js, Express.js, and secure API integrations.",
+    icon: "🛠️",
   },
   {
     title: "CI/CD & DevOps Integration",
     description:
-      "Setup and optimization of Jenkins, GitLab CI/CD pipelines, and automated deployments for faster, safer releases.",
+      "Setup and optimization of Jenkins, GitLab CI/CD pipelines, and automated deployments.",
     icon: "🔄",
   },
   {
@@ -34,6 +28,12 @@ const services = [
     description:
       "Database design, API development, and testing with MS SQL, Postgres, MongoDB, and RESTful services.",
     icon: "🗄️",
+  },
+  {
+    title: "Web Scraping & Data Bots",
+    description:
+      "Automated solutions for extracting, aggregating, and processing data from websites, tailored for business intelligence, lead generation, and market research.",
+    icon: "🤖",
   },
 ]
 

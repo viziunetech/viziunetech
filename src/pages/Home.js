@@ -2,36 +2,36 @@
 import React from 'react';
 
 const services = [
-  {
-    icon: <span role="img" aria-label="QA Automation" className="text-cyan-400 text-3xl">🧪</span>,
-    title: "QA Automation & Testing",
-    desc: "End-to-end automation for API, Database, and Web UI. Robust frameworks and test strategies for quality delivery."
-  },
-  {
-    icon: <span role="img" aria-label="Full Stack" className="text-fuchsia-400 text-3xl">💻</span>,
-    title: "Full Stack Development",
-    desc: "Modern web applications with ReactJS, Express.js, and scalable backend solutions."
-  },
-  {
-    icon: <span role="img" aria-label="Frameworks" className="text-blue-400 text-3xl">⚙️</span>,
-    title: "Automation Frameworks",
-    desc: "Custom automation frameworks for testing and workflow optimization. Selenium, Postman, Python, and more."
-  },
-  {
-    icon: <span role="img" aria-label="Agile" className="text-yellow-400 text-3xl">🚀</span>,
-    title: "Agile Consulting & Delivery",
-    desc: "Agile-focused project management, sprint planning, and quality assurance for rapid, reliable software delivery."
-  },
-  {
-    icon: <span role="img" aria-label="CI/CD" className="text-green-400 text-3xl">🔄</span>,
-    title: "CI/CD & DevOps Integration",
-    desc: "Setup and optimization of Jenkins, GitLab CI/CD pipelines, and automated deployments."
-  },
-  {
-    icon: <span role="img" aria-label="Database" className="text-pink-400 text-3xl">🗄️</span>,
-    title: "Database & API Solutions",
-    desc: "Database design, API development, and testing with MS SQL, Postgres, MongoDB, and RESTful services."
-  },
+    {
+        icon: <span role="img" aria-label="QA Automation" className="text-cyan-400 text-3xl">🧪</span>,
+        title: "QA Automation & Frameworks",
+        desc: "End-to-end automation for API, Database, and Web UI, including custom frameworks and robust test strategies."
+    },
+    {
+        icon: <span role="img" aria-label="Frontend" className="text-fuchsia-400 text-3xl">🎨</span>,
+        title: "Frontend Development",
+        desc: "Beautiful, responsive websites and web apps using ReactJS and modern UI/UX best practices."
+    },
+    {
+        icon: <span role="img" aria-label="Backend" className="text-blue-400 text-3xl">🛠️</span>,
+        title: "Backend Development",
+        desc: "Robust, scalable server-side solutions with Node.js, Express.js, and secure API integrations."
+    },
+    {
+        icon: <span role="img" aria-label="CI/CD" className="text-green-400 text-3xl">🔄</span>,
+        title: "CI/CD & DevOps Integration",
+        desc: "Setup and optimization of Jenkins, GitLab CI/CD pipelines, and automated deployments."
+    },
+    {
+        icon: <span role="img" aria-label="Database" className="text-pink-400 text-3xl">🗄️</span>,
+        title: "Database & API Solutions",
+        desc: "Database design, API development, and testing with MS SQL, Postgres, MongoDB, and RESTful services."
+    },
+    {
+        icon: <span role="img" aria-label="Web Scraping" className="text-yellow-400 text-3xl">🤖</span>,
+        title: "Web Scraping & Data Bots",
+        desc: "Automated solutions for extracting, aggregating, and processing data from websites, tailored for business intelligence, lead generation, and market research."
+    },
 ];
 // Testimonials data
 const testimonials = [
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
                         {/* Testimonials Section */}
-                        <div className="w-full mt-14 px-0 animate-fade-in delay-500">
+                        {/* <div className="w-full mt-14 px-0 animate-fade-in delay-500">
                                 <h2 className="w-full text-2xl md:text-3xl font-bold text-fuchsia-400 text-center mb-6 tracking-wider">What Clients Say</h2>
                                 <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 px-0">
                                     {testimonials.map((t, idx) => (
@@ -139,7 +139,7 @@ export default function Home() {
                                         </div>
                                     ))}
                                 </div>
-                        </div>
+                        </div> */}
 
                         {/* Call to Action Section */}
             <div className="w-full mt-10 text-center px-0 animate-fade-in delay-700">
